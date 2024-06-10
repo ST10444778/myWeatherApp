@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatherpicture2"
+    tools:context=".splashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtWeatherApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/weatherlogo" />
+
+    <TextView
+        android:id="@+id/txtWeatherApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="71dp"
+        android:fontFamily="serif"
+        android:text="THE WEATHER APP"
+        android:textColor="#171616"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Kitso Phaedi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtStudentNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeatherApp" />
+
+    <TextView
+        android:id="@+id/txtStudentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="75dp"
+        android:text="ST10444778"
+        app:layout_constraintBottom_toTopOf="@+id/btnExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="64dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStudentNumber" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="83dp"
+        android:text="Start"
+        app:iconTint="#0D668E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeatherApp"
+        app:strokeColor="#0927CD" />
+</androidx.constraintlayout.widget.ConstraintLayout>
